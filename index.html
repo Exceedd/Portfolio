@@ -1,70 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exceedd Login</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
 
-    .login-container {
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      width: 300px;
-      text-align: center;
-    }
+        .login-container {
+            background-color: #262626;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            width: 360px;
+            max-width: 100%;
+            padding: 30px;
+            text-align: center;
+        }
 
-    input {
-      width: 100%;
-      padding: 10px;
-      margin: 8px 0;
-      box-sizing: border-box;
-    }
+        .login-container h2 {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
 
-    button {
-      background-color: #4caf50;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
 
-    button:hover {
-      background-color: #45a049;
-    }
-  </style>
+        .input-group {
+            position: relative;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #333;
+            border-radius: 8px;
+            outline: none;
+            color: #ffffff;
+            background-color: #333;
+        }
+
+        .input-group label {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 15px;
+            color: #999;
+            transition: 0.3s;
+            pointer-events: none;
+        }
+
+        .input-group input:focus + label,
+        .input-group input:not(:placeholder-shown) + label {
+            transform: translateY(-150%);
+            font-size: 14px;
+            color: #3498db;
+        }
+
+        .login-button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .login-button:hover {
+            background-color: #2980b9;
+        }
+
+        .footer {
+            margin-top: 20px;
+            color: #999;
+        }
+    </style>
 </head>
 <body>
-  <div class="login-container">
-    <h2>Login</h2>
-    <form>
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required>
-
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required>
-
-      <button type="button" onclick="login()">Login</button>
-    </form>
-  </div>
-
-  <script>
-    function login() {
-      // Add your login logic here
-      alert("Login button clicked");
-    }
-  </script>
+    <div class="login-container">
+        <h2>Welcome to Exceedd</h2>
+        <form class="login-form" action="#" method="post">
+            <div class="input-group">
+                <input type="text" id="username" name="username" required>
+                <label for="username">Username</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" required>
+                <label for="password">Password</label>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+        <div class="footer">Don't have an account? <a href="#">Sign up</a></div>
+    </div>
 </body>
 </html>
 <script>
