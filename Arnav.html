@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exceedd Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .portfolio-container {
+            background-color: #262626;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            width: 360px;
+            max-width: 100%;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .portfolio-container h2 {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .info-group {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .info-group label {
+            color: #999;
+        }
+
+        .info-group span {
+            color: #ffffff;
+        }
+
+        .total-returns {
+            margin-top: 30px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="portfolio-container">
+        <h2>Portfolio</h2>
+        <div class="info-group">
+            <label>Client Name:</label>
+            <span>Arnav</span>
+        </div>
+        <div class="info-group">
+            <label>Amount Invested:</label>
+            <span>₹50,00,000</span>
+        </div>
+        <div class="info-group">
+            <label>Current Value:</label>
+            <span>₹60,00,000</span>
+        </div>
+        <div class="info-group">
+            <label>Total Returns:</label>
+            <span class="total-returns">₹10,00,000</span>
+        </div>
+    </div>
+</body>
+</html>
