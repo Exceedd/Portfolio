@@ -34,23 +34,24 @@
         }
 
         .info-group {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        margin-bottom: 15px; /* Add margin for better spacing */
+    }
 
-        .info-group label {
-            color: #999;
-        }
+    .info-group label {
+        color: #999;
+        flex-basis: 40%; /* Set a fixed width for labels */
+        text-align: right; /* Align labels to the right for better readability */
+    }
 
-        .info-group span {
-            color: #ffffff;
-        }
-
-        .total-returns {
-            margin-top: 30px;
-            font-size: 18px;
-        }
+    .info-group span {
+        color: #ffffff;
+        flex-basis: 60%; /* Set a flexible width for details */
+        text-align: left; /* Align details to the left */
+    }
     </style>
 </head>
 <body>
